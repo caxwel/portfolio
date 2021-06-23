@@ -1,0 +1,104 @@
+@import "../../global.scss";
+
+.about {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 50px;
+        font-family: "kazimirtext-black";
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+            width: 800px;
+            height: 75%;
+            border-radius: 10px;
+            border-image-source: url('../../fonts/frameborder1.png');
+            border-image-slice: 200;
+            border-image-repeat: stretch;
+            border-width: 90px;
+            border-style: solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0;
+
+            .left {
+                flex: 6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                margin: 0;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .right {
+                flex: 6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+
+                .top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+    
+                        .start, .end {
+                            height: 25px;
+                        }
+    
+                        .start {
+                            margin-right: 100px;
+                        }
+                }
+    
+                .center {
+                    padding: 10px;
+                    background-color: $mainColor;
+                    border-radius: 10px;
+                    height: 40%;
+                    color: #fff;
+                }
+    
+                .bottom {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    h3 {
+                        margin-bottom: 5px;
+                    }
+    
+                    h4 {
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+}

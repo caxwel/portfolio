@@ -1,0 +1,21 @@
+@import "../../global.scss";
+
+.portfolioList {
+    font-size: 1rem;
+    margin-right: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.active {
+        background-color: $mainColor;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 414px) {
+        padding: 4px;
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
+
+}

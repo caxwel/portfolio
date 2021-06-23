@@ -1,0 +1,120 @@
+@import "../../global.scss";
+
+.intro {
+    background-color: #fff;
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .left {
+        flex: 0.5;
+        background-color: #fff;
+        overflow: hidden;
+
+        .imgContainer {
+            width: 900px;
+            height: 900px;
+            background: url("../../fonts/ocean1.png");
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+            overflow: hidden;
+
+            @include mobile {
+                align-items: flex-start;
+                margin-left: 40%;
+                
+            }
+
+            img {
+                height: 100%;
+                width: auto;
+
+                @include mobile {
+                    height: 50%;
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 0.5;
+        background-color: #fff;
+        color: $mainColor;
+        position: relative;
+
+        .logo {
+            color: inherit;
+            animation: blink 2s infinite;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-family: "kazimirtext-light", serif;
+
+            span {
+                font-size: inherit;
+                color: inherit;
+                font-family: "kazimirtext-light", serif;
+                font-weight: 200;
+            }
+        }
+    }
+
+    a {
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+
+    .ityped-cursor {
+        font-size: 2.2rem;
+        opacity: 1;
+        -webkit-animation: blink 0.3s infinite;
+        -moz-animation: blink 0.3s infinite;
+        animation: blink 0.3s infinite;
+        animation-direction: alternate;
+    }
+     
+    @keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
+     
+    @-webkit-keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
+     
+    @-moz-keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
+}

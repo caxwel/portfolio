@@ -1,0 +1,115 @@
+.highlights {
+    background-color: rgb(106, 32, 136);
+    background: url("../../fonts/ocean1.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .back {
+        position: absolute;
+        left: 100px;
+        color: #000;
+        font-size: 70px;
+        cursor: pointer;
+    }
+
+    .forward {
+        position: absolute;
+        right: 100px;
+        color: #000;
+        font-size: 70px;
+        cursor: pointer;
+    }
+
+    .slider {
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+
+        .container {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                width: 700px;
+                height: 100%;
+                background-color: #fff;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                .left {
+                    flex: 4;
+                    height: 80%;
+                    background-color:#fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .leftContainer {
+                        width: 90%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .imgContainer {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: lightseagreen;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 25px;
+                            font-family: "kazimirtext-black";
+                            margin-bottom: 0;
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            font-family: "kazimirtext-black";
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .right {
+                    flex: 8;
+                    height: 80%;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 400px;
+                        transform: rotate(-10deg);
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

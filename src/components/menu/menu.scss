@@ -1,0 +1,85 @@
+@import "../../global.scss";
+
+.menu {
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+
+    &.active {
+        background-color: $mainColor;
+        right: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-family: "kazimirtext-light", serif;
+        color: #fff;
+        width: 60%;
+        box-sizing: border-box;
+        transition: all .35s ease;
+
+        li {
+            display: inline-block;
+            list-style: outside none none;
+            box-sizing: border-box;
+            margin: .4em 0;
+            padding: 0;
+
+            a {
+                font-size: inherit;
+                font-family: "kazimirtext-light", serif;
+                color: inherit;
+                text-decoration: none;
+                transition: all 1s ease;
+                padding: .5em 0;
+                position: relative;
+            }
+
+            &::before, &::after {
+                content: '';
+                height: 14px;
+                width: 14px;
+                position: absolute;
+                transition: all .35s ease;
+                opacity: 0;
+            }
+
+            &::after {
+                content: '';
+                border-top: 2px solid #fff;
+                border-right: 2px solid #fff;
+                transform: translate(-100%, 50%);
+            }
+
+            &::before {
+                content: '';
+                margin-top: 1.67rem;
+                margin-left: -0.8rem;
+                border-bottom: 2px solid #fff;
+                border-left: 2px solid #fff;
+                transform: translate(100%, -50%)
+            }
+
+            &:hover:before, &:hover:after {
+                transform: translate(0,0);
+                opacity: 1;
+            }
+
+            &:hover {
+                color: lightpink;
+            }
+        }
+    }
+}

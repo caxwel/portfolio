@@ -1,0 +1,94 @@
+@import "../../global.scss";
+
+.topbar {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    color: $mainColor;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease;
+
+    .wrapper {
+        width: 100%;
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .logo {
+                font-size: 2.8rem;
+                text-decoration: none;
+                font-family: "kazimirtext-black", serif;
+                color: inherit;
+                margin-right: 40px;
+                margin-top: -7px;
+            }
+
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+
+                .icon {
+                    font-size: 18px;
+                    margin-right: 5px;
+                }
+                
+                span {
+                    font-size: 15px;
+                    font-family: "kazimirtext-light", serif;
+                }
+            }
+        }
+
+        .right {
+            .hamburger {
+                width: 32px;
+                height: 25px;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+
+                span {
+                    width: 100%;
+                    height: 3px;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+
+    &.active {
+        background-color: $mainColor;
+        color: #fff;
+
+        .hamburger {
+            span {
+                &:first-child {
+                    background-color: #fff;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    background-color: #fff;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
