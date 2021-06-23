@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .highlights {
     background-color: rgb(106, 32, 136);
     background: url("../../fonts/ocean1.png");
@@ -38,7 +40,7 @@
             .item {
                 width: 700px;
                 height: 100%;
-                background-color: #fff;
+                background-color: $background;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
@@ -48,7 +50,7 @@
                 .left {
                     flex: 4;
                     height: 80%;
-                    background-color:#fff;
+                    background-color:$background;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -97,7 +99,7 @@
                 .right {
                     flex: 8;
                     height: 80%;
-                    background-color: #fff;
+                    background-color: $background;
                     display: flex;
                     align-items: center;
                     justify-content: center;

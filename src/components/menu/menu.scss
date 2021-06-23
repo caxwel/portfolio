@@ -25,7 +25,7 @@
         list-style: none;
         font-size: 30px;
         font-family: "kazimirtext-light", serif;
-        color: #fff;
+        color: $background;
         width: 60%;
         box-sizing: border-box;
         transition: all .35s ease;
@@ -58,8 +58,8 @@
 
             &::after {
                 content: '';
-                border-top: 2px solid #fff;
-                border-right: 2px solid #fff;
+                border-top: 2px solid $background;
+                border-right: 2px solid $background;
                 transform: translate(-100%, 50%);
             }
 
@@ -67,8 +67,8 @@
                 content: '';
                 margin-top: 1.67rem;
                 margin-left: -0.8rem;
-                border-bottom: 2px solid #fff;
-                border-left: 2px solid #fff;
+                border-bottom: 2px solid $background;
+                border-left: 2px solid $background;
                 transform: translate(100%, -50%)
             }
 
@@ -78,7 +78,7 @@
             }
 
             &:hover {
-                color: lightpink;
+                color: $hover;
             }
         }
     }

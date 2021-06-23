@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .about {
-    background-color: #fff;
+    background-color: $background;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@
     }
 
     a {
-        color: #fff;
+        color: $background;
         text-decoration: underline;
     }
 
@@ -81,7 +81,7 @@
                     background-color: $mainColor;
                     border-radius: 10px;
                     height: 40%;
-                    color: #fff;
+                    color: $background;
                 }
     
                 .bottom {

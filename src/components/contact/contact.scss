@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-    background-color: #fff;
+    background-color: $background;
     display: flex;
 
     .left {
@@ -54,7 +54,7 @@
                 width: 150px;
                 height: 30px;
                 background-color: $mainColor;
-                color: #fff;
+                color: $background;
                 border: none;
                 border-radius: 15px;
                 font-family: "kazimirtext-black", serif;

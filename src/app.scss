@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'kazimirtext-regular';
-    src: url('fonts/kazimirtext-regular-webfont.woff2') format('woff2'),
-        url('fonts/kazimirtext-regular-webfont.woff') format('woff');
+    src: url('fonts/ndiscover_-_point_soft_demo_light-webfont.woff2') format('woff2'),
+        url('fonts/ndiscover_-_point_soft_demo_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'kazimirtext-light';
-    src: url('fonts/kazimirtext-light-webfont.woff2') format('woff2'),
-        url('fonts/kazimirtext-light-webfont.woff') format('woff');
+    src: url('fonts/ndiscover_-_point_soft_demo_light-webfont.woff2') format('woff2'),
+        url('fonts/ndiscover_-_point_soft_demo_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'kazimirtext-black';
-    src: url('fonts/kazimirtext-black-webfont.woff2') format('woff2'),
-        url('fonts/kazimirtext-black-webfont.woff') format('woff');
+    src: url('fonts/ndiscover_-_point_soft_demo_semi_bold-webfont.woff2') format('woff2'),
+        url('fonts/ndiscover_-_point_soft_demo_semi_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
@@ -46,7 +46,7 @@
       .sections {
         width: 100%;
         height: calc(100vh - 70px);
-        background-color: lightskyblue;
+        background-color: #FFFEF4;
         position: relative;
         top: 70px;
         overflow-y: auto;
