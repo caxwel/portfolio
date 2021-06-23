@@ -11,6 +11,34 @@
         .send {
             height: 100%;
         }
+
+        .imgContainer {
+            width: 900px;
+            height: 900px;
+            flex-direction: column;
+            background-color: $background;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+            overflow: hidden;
+
+            @include mobile {
+                align-items: flex-start;
+                margin-left: 40%;
+                
+            }
+
+            img {
+                height: 100%;
+                width: auto;
+                vertical-align: center;
+
+                @include mobile {
+                    height: 50%;
+                }
+            }
+        }
     }
 
     .right {
