@@ -2,6 +2,10 @@
 
 .highlights {
     background-color: $background;
+    background: url("../../fonts/highlight-V4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,10 +43,7 @@
             .item {
                 width: 700px;
                 height: 100%;
-                background: url("../../fonts/highlight-new.jpg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                background-color: $background;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
