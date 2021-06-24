@@ -1,8 +1,7 @@
 @import "../../global.scss";
 
 .highlights {
-    background-color: rgb(106, 32, 136);
-    background: url("../../fonts/ocean1.png");
+    background-color: $background;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +39,10 @@
             .item {
                 width: 700px;
                 height: 100%;
-                background-color: $background;
+                background: url("../../fonts/highlight-new.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
@@ -50,7 +52,7 @@
                 .left {
                     flex: 4;
                     height: 80%;
-                    background-color:$background;
+                    background-color: RGBA(255, 254, 244, 0.5);
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -99,7 +101,7 @@
                 .right {
                     flex: 8;
                     height: 80%;
-                    background-color: $background;
+                    background-color: RGBA(255, 254, 244, 0.5);
                     display: flex;
                     align-items: center;
                     justify-content: center;
