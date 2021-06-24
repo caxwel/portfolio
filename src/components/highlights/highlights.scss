@@ -1,8 +1,7 @@
 @import "../../global.scss";
 
 .highlights {
-    background-color: rgb(106, 32, 136);
-    background: url("../../fonts/ocean1.png");
+    background-color: $background;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +40,12 @@
                 width: 700px;
                 height: 100%;
                 background-color: $background;
-                border-radius: 20px;
+                border-radius: 10px;
+                border-image-source: url('../../fonts/frameborder1.png');
+                border-image-slice: 180;
+                border-image-repeat: stretch;
+                border-width: 70px;
+                border-style: solid;
                 display: flex;
                 align-items: center;
                 justify-content: center;
