@@ -7,7 +7,7 @@ export default function About() {
             <div className="container">
                 <div className="card">
                     <div className="left">
-                        <img src="assets/maxasset.png" alt=""/>
+                        <img src="#" alt=""/>
                     </div>
                     <div className="right">
                     <h1>About Me</h1>
@@ -16,11 +16,7 @@ export default function About() {
                         <LinkedIn className="end" />
                     </div>
                     <div className="center">
-                        Hello! I’m a software engineer and artist based in Tokyo, living in my fourth country and most likely drawing in my fiftieth sketchbook.
-                        <br/> <br/>
-                        Check out my tech talk on making art out of pure CSS <a href="https://www.youtube.com/watch?v=jbHVNn4qoPI">here</a>!
-                        <br/>
-                        I’m always looking forward to seeing what my next project will be as a software engineer and can’t wait to discover my next step. 
+                        about u 
                     </div>
                     <div className="bottom">
                         <h3>Thanks for visiting!</h3>

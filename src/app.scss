@@ -13,6 +13,14 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'sweet-chili';
+    src: url('fonts/sweet_chili_demo-webfont.woff2') format('woff2'),
+        url('fonts/sweet_chili_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
   
   body {
     margin: 0;
@@ -25,7 +33,7 @@
   }
 
   h1 {
-    font-family: 'ndiscover-black', serif;
+    font-family: 'sweet-chili', serif;
   }
 
   h2, h3 {
