@@ -1,5 +1,5 @@
-@font-face {
-    font-family: 'kazimirtext-regular';
+    @font-face {
+    font-family: 'ndiscover-light';
     src: url('fonts/ndiscover_-_point_soft_demo_light-webfont.woff2') format('woff2'),
         url('fonts/ndiscover_-_point_soft_demo_light-webfont.woff') format('woff');
     font-weight: normal;
@@ -7,15 +7,7 @@
   }
   
   @font-face {
-    font-family: 'kazimirtext-light';
-    src: url('fonts/ndiscover_-_point_soft_demo_light-webfont.woff2') format('woff2'),
-        url('fonts/ndiscover_-_point_soft_demo_light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'kazimirtext-black';
+    font-family: 'ndiscover-black';
     src: url('fonts/ndiscover_-_point_soft_demo_semi_bold-webfont.woff2') format('woff2'),
         url('fonts/ndiscover_-_point_soft_demo_semi_bold-webfont.woff') format('woff');
     font-weight: normal;
@@ -27,13 +19,13 @@
   }
   
   * {
-    font-family: 'kazimirtext-regular', serif;
+    font-family: 'ndiscover-light', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1 {
-    font-family: 'kazimirtext-black', serif;
+    font-family: 'ndiscover-black', serif;
   }
 
   h2, h3 {
