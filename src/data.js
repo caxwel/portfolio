@@ -24,84 +24,103 @@ export const featuredPortfolio = [
 export const Portfolio2 = [
     {
         id: 1,
-        title: "KNIGHTS ONLY",
-        img: "assets/web-knights.png"
+        title: "Yearbook",
+        img: "assets/mcwilliams02.jpg"
     },
     {
         id: 2,
-        title: "overcast",
-        img: "assets/web-overcast.png"
+        title: "Acidemic Pamphlet",
+        img: "assets/acidemic.png"
     },
     {
         id: 3,
-        title: "Crypticgen",
-        img: "assets/web-crypticgen.png"
+        title: "Vocational Pamphlet",
+        img: "assets/voc.png"
     },
     {
         id: 4,
-        title: "starfield",
-        img: "assets/web-starfield.png"
+        title: "Inside Pamphlet",
+        img: "assets/inside.png"
     },
 ];
 
 export const Portfolio3 = [
     {
         id: 1,
-        title: "destiNations",
-        img: "assets/mobile-dest.png"
+        title: "World Fair Poster",
+        img: "assets/paris.png"
+    },
+    {
+        id: 2,
+        title: "Child Superhero FTK",
+        img: "assets/superhero.png"
+    },
+    {
+        id: 3,
+        title: "Playing Cards Deck",
+        img: "assets/mcwilliams06.jpg"
+    },
+    {
+        id: 4,
+        title: "Phoenix",
+        img: "assets/mcwilliams08.jpg"
     },
 ];
 
 export const Portfolio1 = [
     {
         id: 1,
-        title: "YWCA Stand Against Racism",
-        img: "assets/contrib-ywca.png"
+        title: "Eldred Wheeler Mailer Fall Sale",
+        img: "assets/postcard.png"
     },
     {
         id: 2,
-        title: "BIDMC Where Extraordinary Lives",
-        img: "assets/contrib-bidmc.png"
+        title: "Christmas Mailer",
+        img: "assets/postcard2.png"
     },
     {
         id: 3,
-        title: "The Nature Conservancy",
-        img: "assets/contrib-tnc.png"
+        title: "Factory Sale Mailer",
+        img: "assets/postcard3.png"
     },
     {
         id: 4,
-        title: "Diabetes Canada Lace Up",
-        img: "assets/contrib-dbca.png"
+        title: "Eldred Wheeler Coupon",
+        img: "assets/coupon.png"
+    },
+    {
+        id: 5,
+        title: "Raffel Ticket",
+        img: "assets/ticket.png"
+    },
+    {
+        id: 6,
+        title: "Bandaid Die Cut",
+        img: "assets/bandain.png"
     },
 ];
 
 export const descriptions  = [
     {
         id: "1",
-        icon: "assets/moon.png",
-        title: "CSS Art & Creative Css",
-        desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
-        img: "assets/web-tarot.png"
+        icon: "assets/coupon.png",
+        title: "Eldred Wheeler Promotional Coupon",
+        desc: "When I first started at Eldred Wheeler they were using bitmap images for all their promotional materials which lead many of their marketing materials to be very pixelated. One of my first task was converting these to vectors and developing a cleaner image for the brand.",
+        img: "assets/coupon.png"
     },
     {
         id: "2",
-        icon: "assets/moon.png",
-        title: "overcast",
-        desc: "Music-playing app that generates playlists based on weather at user's location & genre choice. Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
-        img: "assets/web-overcast.png"
+        icon: "assets/superhero.png",
+        title: "Child Superhero FTK",
+        desc: "My freshman year of college I was Co-PR Director for For the Kids, a charity program on campus that worked with Boston Children's Hospital.",
+        img: "assets/superhero.png"
     },
     {
         id: "3",
-        icon: "assets/moon.png",
-        title: "destiNations",
-        desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
-        img: "assets/mobile-dest.png"
+        icon: "assets/mcwilliams02.jpg",
+        title: "Yearbook Layout",
+        desc: "I have worked on many magazines and yearbooks over the years, from my high school yearbook to the yearbooks for the preschool I teach at. I have always found balencing text with the images and nexting them into each other in an appealing way a fun and satisfying challenge.",
+        img: "assets/mcwilliams02.jpg"
     },
-    {
-        id: "4",
-        icon: "assets/moon.png",
-        title: "KNIGHTS ONLY",
-        desc: "Web app that draws you, a knight, a personal crest based on your answers to various word association questions. Images are drawn and added to question by question on HTML canvas.",
-        img: "assets/web-knights.png"
-    }
+  
 ];
