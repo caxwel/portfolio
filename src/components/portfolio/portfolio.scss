@@ -30,7 +30,7 @@
     }
 
     .container {
-        width: 70%;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -74,12 +74,71 @@
             }
         }
 
+        .two, .three {
+
+            margin: 2vw 4vw;
+
+            &:nth-child(1) {
+                margin-left: 8vw;
+            }
+
+            &:nth-child(2) {
+                margin-right: 8vw;
+            }
+
+            &:nth-child(3) {
+                margin-left: 8vw;
+            }
+
+            &:nth-child(4) {
+                margin-right: 8vw;
+            }
+        }
+
         @media screen and (min-width: 1115px) {
-            width: 50%;
+            width: 70%;
+
+            .two, .three {
+                margin: 2vw 4vw;
+            }
+        }
+
+        @media screen and (min-width: 1435px) {
+
+            .two, .three {
+                margin: 2vw 5vw;
+            }
+        }
+
+        @media screen and (min-width: 1486px) {
+            .item {
+                width: 18vw;
+                height: 10vw;
+            }
+        }
+
+        @media screen and (max-width: 866px) {
+            .item {
+                width: 30vw;
+                height: 15vw;
+            }
+
+            .two, .three {
+                height: 20vw;
+            }
         }
 
         @media screen and (max-width: 743px) {
             width: 90%;
+
+            .item {
+                width: 30vw;
+                height: 18vw;
+            }
+
+            .two, .three {
+                height: 20vw;
+            }
         }
 
         @media screen and (max-width: 577px) {
@@ -87,6 +146,29 @@
 
             .item {
                 width: 150px;
+                height: 25vw;
+            }
+        }
+
+        @media screen and (max-width: 422px) {
+            width: 95%;
+
+            .two, .three {
+                &:nth-child(1) {
+                    margin-left: 5vw;
+                }
+    
+                &:nth-child(2) {
+                    margin-right: 5vw;
+                }
+    
+                &:nth-child(3) {
+                    margin-left: 5vw;
+                }
+    
+                &:nth-child(4) {
+                    margin-right: 5vw;
+                }
             }
         }
 
@@ -95,8 +177,8 @@
             margin-top: -15px;
 
             .item {
-                width: 200px;
-                height: 100px;
+                width: 30vw;
+                height: 35vw;
             }
         }
     }

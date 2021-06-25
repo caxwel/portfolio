@@ -1,16 +1,15 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/portfolioList";
 import { useEffect, useState } from "react";
-import { featuredPortfolio, Portfolio1, Portfolio2, Portfolio3 } from "../../data";
+import { Portfolio1, Portfolio2, Portfolio3 } from "../../data";
+import Modal from '@material-ui/core/Modal';
+
 
 export default function Portfolio() {
-    const [selected, setSelected] = useState("featured");
+    const [selected, setSelected] = useState("cat1");
     const [data, setData] = useState([]);
+    const [open, setOpen] = useState(false);
     const list = [
-        {
-            id: "featured",
-            title: "Featured"
-        },
         {
             id: "cat1",
             title: "Contributions"
@@ -25,12 +24,17 @@ export default function Portfolio() {
         }
     ];
 
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    }
+
     useEffect(() => {
 
         switch(selected) {
-            case "featured":
-                setData(featuredPortfolio);
-                break;
             case "cat1":
                 setData(Portfolio1);
                 break;
@@ -41,7 +45,7 @@ export default function Portfolio() {
                 setData(Portfolio3);
                 break;
             default:
-                setData(featuredPortfolio);
+                setData(Portfolio1);
         }
 
     },[selected]);
@@ -61,9 +65,10 @@ export default function Portfolio() {
             </ul>
             <div className="container">
                 {data.map((d) => (
-                    <div className="item">
+                    <div className={ `item ${d.group}` } onClick={ handleOpen }>
                         <img src={d.img} alt="" />
                         <h3>{d.title}</h3>
+                        {/* <Modal open={open} onClose={handleClose} >HI</Modal> */}
                     </div>
                 ))}
             </div>
