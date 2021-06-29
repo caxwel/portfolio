@@ -2,13 +2,12 @@ import "./portfolio.scss";
 import PortfolioList from "../portfolioList/portfolioList";
 import { useEffect, useState } from "react";
 import { Portfolio1, Portfolio2, Portfolio3 } from "../../data";
-import Modal from '@material-ui/core/Modal';
+import Lightbox from "../lightbox/Lightbox";
 
 
 export default function Portfolio() {
     const [selected, setSelected] = useState("cat1");
     const [data, setData] = useState([]);
-    const [open, setOpen] = useState(false);
     const list = [
         {
             id: "cat1",
@@ -23,14 +22,6 @@ export default function Portfolio() {
             title: "Mobile"
         }
     ];
-
-    const handleOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    }
 
     useEffect(() => {
 
@@ -52,7 +43,8 @@ export default function Portfolio() {
 
     return (
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
+            <h1>Portfolio</h1><br />
+            <Lightbox />
             <ul>
                 {list.map((item) => (
                     <PortfolioList 
@@ -65,7 +57,7 @@ export default function Portfolio() {
             </ul>
             <div className="container">
                 {data.map((d) => (
-                    <div className={ `item ${d.group}` } onClick={ handleOpen }>
+                    <div className={ `item ${d.group}` } >
                         <img src={d.img} alt="" />
                         <h3>{d.title}</h3>
                         {/* <Modal open={open} onClose={handleClose} >HI</Modal> */}
