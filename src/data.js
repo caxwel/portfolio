@@ -2,22 +2,30 @@ export const featuredPortfolio = [
     {
         id: 1,
         title: "overcast",
-        img: "assets/web-overcast.png"
+        img: "assets/web-overcast.png",
+        desc: "Music-playing app that generates playlists based on weather at user's location & genre choice. Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
+        tech: "React/Redux, NodeJS/Express, PostgreSQL, HTML/CSS"
     },
     {
         id: 2,
         title: "destiNations",
-        img: "assets/mobile-dest.png"
+        img: "assets/mobile-dest.png",
+        desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
+        tech: "Unity/C#, Node.js/Express, Firebase"
     },
     {
         id: 3,
-        title: "KNIGHTS ONLY",
-        img: "assets/web-knights.png"
+        title: "CSS Art & Creative Css",
+        img: "assets/web-tarot.png",
+        desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
+        tech: "HTML/CSS, patience"
     },
     {
         id: 4,
         title: "YWCA",
-        img: "assets/contrib-ywca.png"
+        img: "assets/contrib-ywca.png",
+        desc: "Website build and continued maintenance for YWCA Stand Against Racism and A Week Without Violence",
+        tech: "HTML/CSS/SASS, WordPress, JavaScript, PHP"
     },
 ];
 
@@ -25,22 +33,30 @@ export const Portfolio2 = [
     {
         id: 1,
         title: "KNIGHTS ONLY",
-        img: "assets/web-knights.png"
+        img: "assets/web-knights.png",
+        desc: "Web app that draws you, a knight, a personal crest based on your answers to various word association questions. Images are drawn and added to question by question on HTML canvas.",
+        tech: "Vue, Node.js, HTML/CSS"
     },
     {
         id: 2,
         title: "overcast",
-        img: "assets/web-overcast.png"
+        img: "assets/web-overcast.png",
+        desc: "Music-playing app that generates playlists based on weather at user's location & genre choice. Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
+        tech: "React/Redux, NodeJS/Express, PostgreSQL, HTML/CSS"
     },
     {
         id: 3,
         title: "Crypticgen",
-        img: "assets/web-crypticgen.png"
+        img: "assets/web-crypticgen.png",
+        desc: "Personal solo project of a web app that genenerates interesting writing prompts from a database of unusual statements, with option to share to twitter.",
+        tech: "HTML/CSS, PostgreSQL"
     },
     {
         id: 4,
         title: "starfield",
-        img: "assets/web-starfield.png"
+        img: "assets/web-starfield.png",
+        desc: "Interactive project built in Unity/C# over the course of a week with the goal of rapidly learning new technologies and languages.",
+        tech: "Unity/C#"
     },
 ];
 
@@ -48,30 +64,47 @@ export const Portfolio3 = [
     {
         id: 1,
         title: "destiNations",
-        img: "assets/mobile-dest.png"
+        img: "assets/mobile-dest.png",
+        desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
+        tech: "Unity/C#, Node.js/Express, Firebase"
     },
+    {
+        id: 2,
+        title: "CSS Art & Creative Css",
+        img: "assets/web-tarot.png",
+        desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
+        tech: "HTML/CSS, patience"
+    }
 ];
 
 export const Portfolio1 = [
     {
         id: 1,
-        title: "YWCA Stand Against Racism",
-        img: "assets/contrib-ywca.png"
+        title: "YWCA",
+        img: "assets/contrib-ywca.png",
+        desc: "Website build and continued maintenance for YWCA Stand Against Racism and A Week Without Violence",
+        tech: "HTML/CSS/SASS, WordPress, JavaScript, PHP"
     },
     {
         id: 2,
         title: "BIDMC Where Extraordinary Lives",
-        img: "assets/contrib-bidmc.png"
+        img: "assets/contrib-bidmc.png",
+        desc: "Page build for Beth Israel Deaconess Medical Center's event unveiling of their new building.",
+        tech: "HTML/CSS/SASS, WordPress, JavaScript, PHP"
     },
     {
         id: 3,
         title: "The Nature Conservancy",
-        img: "assets/contrib-tnc.png"
+        img: "assets/contrib-tnc.png",
+        desc: "Website build for The Nature Conservancy, built as part of a larger team.",
+        tech: "HTML/CSS/SASS, JavaScript, Engaging Networks, AAA Accessibility"
     },
     {
         id: 4,
         title: "Diabetes Canada Lace Up",
-        img: "assets/contrib-dbca.png"
+        img: "assets/contrib-dbca.png",
+        desc: "Stylesheet and page/component build for Diabetes Canada's event pages.",
+        tech: "HTML/CSS/SASS, JavaScript, Luminate"
     },
 ];
 

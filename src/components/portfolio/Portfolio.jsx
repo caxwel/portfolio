@@ -1,54 +1,97 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/portfolioList";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { featuredPortfolio, Portfolio1, Portfolio2, Portfolio3 } from "../../data";
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
 
-export default function Portfolio() {
-    const [selected, setSelected] = useState("featured");
+const useStyles = makeStyles((theme) => ({
+    paper: {
+        position: 'absolute',
+        width: 400,
+        backgroundColor: theme.palette.background.paper,
+        border: 'none',
+        borderRadius: '20px',
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(2, 4, 3),
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        '&:focus': {
+            border: 'none',
+        },
+        '&:focus-visible': {
+            outline: 'none',
+            
+        }
+    },
+  }));
+
+
+
+export default function Portfolio(active) {
+    const [selected, setSelected] = useState("cat1");
     const [data, setData] = useState([]);
+    const [open, setOpen] = useState(false);
+    const [desc, setDesc] = useState([]);
+    const classes = useStyles();
+
+    const titleRef = useRef("hello");
+    const descRef = useRef("hello");
+    const techRef = useRef("helllllo");
+
+    const handleOpen = (x) => {
+        setOpen(true);
+        let boxId = x - 1;
+        titleRef.current = data[boxId].title;
+        descRef.current = data[boxId].desc;
+        techRef.current = data[boxId].tech;
+      };
+    
+      const handleClose = () => {
+        setOpen(false);
+      };
+    
     const list = [
         {
-            id: "featured",
+            id: "cat1",
             title: "Featured"
         },
         {
-            id: "cat1",
+            id: "cat2",
             title: "Contributions"
         },
         {
-            id: "cat2",
+            id: "cat3",
             title: "Web"
         },
         {
-            id: "cat3",
-            title: "Mobile"
+            id: "cat4",
+            title: "Other"
         }
     ];
 
     useEffect(() => {
 
         switch(selected) {
-            case "featured":
-                setData(featuredPortfolio);
-                break;
             case "cat1":
-                setData(Portfolio1);
+                setData(featuredPortfolio);
                 break;
             case "cat2":
-                setData(Portfolio2);
+                setData(Portfolio1);
                 break;
             case "cat3":
-                setData(Portfolio3);
+                setData(Portfolio2);
                 break;
             default:
-                setData(featuredPortfolio);
+                setData(Portfolio3);
         }
 
     },[selected]);
 
     return (
         <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
+            <h1>Portfolio</h1><br />
             <ul>
                 {list.map((item) => (
                     <PortfolioList 
@@ -61,11 +104,31 @@ export default function Portfolio() {
             </ul>
             <div className="container">
                 {data.map((d) => (
-                    <div className="item">
-                        <img src={d.img} alt="" />
-                        <h3>{d.title}</h3>
+                    <div className={`item ${d.group} ${d.id}` } >
+                        <img src={d.img} alt="" onClick={() => handleOpen(d.id)} />
+                        <h3 onClick={() => handleOpen(d.id)}>{d.title}</h3>
                     </div>
                 ))}
+                    <Modal
+                                open={open}
+                                onClose={handleClose}
+                                aria-labelledby="simple-modal-title"
+                                aria-describedby="simple-modal-description"
+                            >
+                                <div className={classes.paper}>
+                                    <div className={`paper-content`}>
+                                        <h2 id="simple-modal-title" ref={titleRef}>
+                                        {titleRef.current}
+                                        </h2>
+                                        <p id="simple-modal-description" ref={descRef}>
+                                        {descRef.current}
+                                        </p>
+                                        <p id="simple-modal-description" ref={techRef}>
+                                        {techRef.current}
+                                        </p>
+                                    </div>
+                                </div>
+                    </Modal>
             </div>
         </div>
     );
