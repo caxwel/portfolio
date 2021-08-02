@@ -1,13 +1,50 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/portfolioList";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Portfolio1, Portfolio2, Portfolio3 } from "../../data";
-import Lightbox from "../lightbox/Lightbox";
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    paper: {
+        position: 'absolute',
+        width: 400,
+        backgroundColor: theme.palette.background.paper,
+        border: 'none',
+        borderRadius: '20px',
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(2, 4, 3),
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        '&:focus': {
+            border: 'none',
+        },
+        '&:focus-visible': {
+            outline: 'none',
+            
+        }
+    },
+  }));
 
 
-export default function Portfolio() {
+
+export default function Portfolio(active) {
     const [selected, setSelected] = useState("cat1");
     const [data, setData] = useState([]);
+    const [open, setOpen] = useState(false);
+    const [desc, setDesc] = useState([]);
+    const classes = useStyles();
+    const reference = useRef("hello");
+
+    const handleOpen = () => {
+        setOpen(true);
+      };
+    
+      const handleClose = () => {
+        setOpen(false);
+      };
+    
     const list = [
         {
             id: "cat1",
@@ -44,7 +81,6 @@ export default function Portfolio() {
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1><br />
-            <Lightbox />
             <ul>
                 {list.map((item) => (
                     <PortfolioList 
@@ -57,12 +93,26 @@ export default function Portfolio() {
             </ul>
             <div className="container">
                 {data.map((d) => (
-                    <div className={ `item ${d.group}` } >
-                        <img src={d.img} alt="" />
-                        <h3>{d.title}</h3>
-                        {/* <Modal open={open} onClose={handleClose} >HI</Modal> */}
+                    <div className={`item ${d.group} ${d.id}` } >
+                        <img src={d.img} alt="" onClick={handleOpen} />
+                        <h3 onClick={handleOpen}>{d.title}</h3>
                     </div>
                 ))}
+                    <Modal
+                                open={open}
+                                onClose={handleClose}
+                                aria-labelledby="simple-modal-title"
+                                aria-describedby="simple-modal-description"
+                            >
+                                <div className={classes.paper}>
+                                    <div className={`paper-content`}>
+                                        <h2 id="simple-modal-title">{}</h2>
+                                        <p id="simple-modal-description">
+                                        {reference.current}
+                                        </p>
+                                    </div>
+                                </div>
+                    </Modal>
             </div>
         </div>
     );

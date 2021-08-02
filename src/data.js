@@ -1,28 +1,66 @@
+export const Portfolio1 = [
+    {
+        id: 1,
+        title: "Eldred Wheeler Mailer Fall Sale",
+        img: "assets/postcard.png",
+        group: "cat-one"
+    },
+    {
+        id: 2,
+        title: "Christmas Mailer",
+        img: "assets/postcard2.png",
+        group: "cat-one"
+    },
+    {
+        id: 3,
+        title: "Factory Sale Mailer",
+        img: "assets/postcard3.png",
+        group: "cat-one"
+    },
+    {
+        id: 4,
+        title: "Eldred Wheeler Coupon",
+        img: "assets/coupon.png",
+        group: "cat-one"
+    },
+    {
+        id: 5,
+        title: "Raffel Ticket",
+        img: "assets/ticket.png",
+        group: "cat-one"
+    },
+    {
+        id: 6,
+        title: "Bandaid Die Cut",
+        img: "assets/bandain.png",
+        group: "cat-one"
+    },
+];
 
 export const Portfolio2 = [
     {
         id: 1,
         title: "Yearbook",
         img: "assets/mcwilliams02.jpg",
-        group: "two"
+        group: "cat-two"
     },
     {
         id: 2,
         title: "Acidemic Pamphlet",
         img: "assets/acidemic.png",
-        group: "two"
+        group: "cat-two"
     },
     {
         id: 3,
         title: "Vocational Pamphlet",
         img: "assets/voc.png",
-        group: "two"
+        group: "cat-two"
     },
     {
         id: 4,
         title: "Inside Pamphlet",
         img: "assets/inside.png",
-        group: "two"
+        group: "cat-two"
     },
 ];
 
@@ -31,64 +69,25 @@ export const Portfolio3 = [
         id: 1,
         title: "World Fair Poster",
         img: "assets/paris.png",
-        group: "three"
+        group: "cat-three"
     },
     {
         id: 2,
         title: "Child Superhero FTK",
         img: "assets/superhero.png",
-        group: "three"
+        group: "cat-three"
     },
     {
         id: 3,
         title: "Playing Cards Deck",
         img: "assets/mcwilliams06.jpg",
-        group: "three"
+        group: "cat-three"
     },
     {
         id: 4,
         title: "Phoenix",
         img: "assets/mcwilliams08.jpg",
-        group: "three"
-    },
-];
-
-export const Portfolio1 = [
-    {
-        id: 1,
-        title: "Eldred Wheeler Mailer Fall Sale",
-        img: "assets/postcard.png",
-        group: "one"
-    },
-    {
-        id: 2,
-        title: "Christmas Mailer",
-        img: "assets/postcard2.png",
-        group: "one"
-    },
-    {
-        id: 3,
-        title: "Factory Sale Mailer",
-        img: "assets/postcard3.png",
-        group: "one"
-    },
-    {
-        id: 4,
-        title: "Eldred Wheeler Coupon",
-        img: "assets/coupon.png",
-        group: "one"
-    },
-    {
-        id: 5,
-        title: "Raffel Ticket",
-        img: "assets/ticket.png",
-        group: "one"
-    },
-    {
-        id: 6,
-        title: "Bandaid Die Cut",
-        img: "assets/bandain.png",
-        group: "one"
+        group: "cat-three"
     },
 ];
 
