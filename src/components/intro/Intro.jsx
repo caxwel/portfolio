@@ -28,7 +28,7 @@ export default function Intro() {
                     <h1>Max Turer,</h1>
                     <h3><span ref={textRef}></span></h3>
                 </div>
-                <a href="#portfolio" className="logo">
+                <a href="#highlights" className="logo">
                     <ArrowDownward />
                 </a>
             </div>

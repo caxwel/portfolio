@@ -48,6 +48,9 @@
                     font-size: 15px;
                     font-family: "kazimirtext-light", serif;
                 }
+                @include mobile {
+                    display: none;
+                }
             }
         }
 

@@ -1,5 +1,5 @@
 import "./highlights.scss";
-import { ArrowBack, ArrowForward } from "@material-ui/icons";
+import { ArrowBack, ArrowDownward, ArrowForward } from "@material-ui/icons";
 import { descriptions } from "../../data";
 import { useState } from "react";
 
@@ -25,7 +25,7 @@ export default function Highlights() {
                                 <p>
                                     {d.desc}
                                 </p>
-                                <span>Projects</span>
+                                <a className="more" href="/#portfolio"><span>Learn More Below</span><ArrowDownward className="arrow"/></a>
                             </div>
                         </div>
                         <div className="right">

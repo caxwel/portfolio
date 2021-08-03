@@ -8,3 +8,19 @@ $width: 768px;
         @content
     }
 }
+
+a {
+    color: $mainColor;
+    text-decoration: none !important;
+    transition: all .35s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $hover;
+}
+
+a, a:visited, a:active, a:hover, a:link {
+    text-decoration: none;
+}
+

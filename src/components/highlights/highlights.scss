@@ -7,6 +7,10 @@
     justify-content: center;
     position: relative;
 
+    a, a:visited, a:active, a:hover, a:link {
+        text-decoration: none;
+    }
+
     .back {
         position: absolute;
         left: 100px;
@@ -91,11 +95,43 @@
                             font-size: 13px;
                         }
 
-                        span {
+                        .more {
                             font-size: 12px;
-                            font-family: "kazimirtext-black";
-                            text-decoration: underline;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            text-decoration: none;
                             cursor: pointer;
+                            animation: blink 4s infinite;
+
+                            span {
+                                font-family: "kazimirtext-black";
+                            }
+
+                            .arrow {
+                                font-size: 16px;
+                                padding-left: 10px;
+                            }
+                        }
+
+
+
+                        @keyframes blink {
+                            100% {
+                                opacity: 0;
+                            }
+                        }
+                         
+                        @-webkit-keyframes blink {
+                            100% {
+                                opacity: 0;
+                            }
+                        }
+                         
+                        @-moz-keyframes blink {
+                            100% {
+                                opacity: 0;
+                            }
                         }
                     }
                 }
