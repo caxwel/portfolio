@@ -5,18 +5,20 @@
     display: flex;
 
     .left {
-        flex: 1;
+        left: 0;
+        width: 100vw;
         overflow: hidden;
+        position: absolute;
 
         .send {
             height: 100%;
         }
 
         .imgContainer {
-            width: 900px;
+            width: 100vw;
             height: 900px;
             flex-direction: column;
-            background-color: $background;
+            background: url("../../fonts/ocean1.png");
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -43,16 +45,22 @@
 
     .right {
         flex: 1;
+        z-index: 2;
+        left: 50%;
+        width: 50%;
+        max-width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: rgba(255, 255, 255, 0.7);
 
         h2 {
             font-size: 40px;
             font-family: "kazimirtext-black", serif;
             font-weight: 400;
             margin: 0;
+            z-index: 3;
         }
 
         form {
@@ -91,10 +99,15 @@
 
             #thanks {
                 position: absolute;
-                color: green;
-                font-family: "kazimirtext-light", serif;
+                color: $mainColor;
+                font-family: "kazimirtext-black", serif;
                 bottom: -20px;
             }
+        }
+
+        @include mobile {
+            width: 100%;
+            max-width: 100%;
         }
     }
 }

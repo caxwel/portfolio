@@ -55,6 +55,11 @@
                 justify-content: center;
                 overflow: hidden;
 
+                @include mobile {
+                    border-image-source: url('../../fonts/frameborder2.png');
+                    border-image-slice: 230;
+                }
+
                 .left {
                     flex: 4;
                     height: 80%;

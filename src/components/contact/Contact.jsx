@@ -31,8 +31,7 @@ export default function Contact() {
         <div className="contact" id="contact">
             <div className="left">
                 <div className="imgContainer">
-                <img src="assets/McWilliams08.jpg" alt=""/>
-                    </div>
+                </div>
             </div>
             <div className="right">
                 <h2>Contact</h2>
