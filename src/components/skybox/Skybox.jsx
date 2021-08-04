@@ -45,8 +45,8 @@ export default function Skybox() {
     useEffect(() => {
         const animate = function () {
             requestAnimationFrame(animate);
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
+            skybox.rotation.x += 0.004;
+            skybox.rotation.y += 0.004;
             renderer.render(scene, camera);
           };
           function onWindowResize() {
@@ -59,18 +59,16 @@ export default function Skybox() {
         }
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(
-        75,
+        55,
         window.innerWidth / window.innerHeight,
-        0.1,
-        1000
+        45,
+        30000
       );
       const renderer = new THREE.WebGLRenderer();
       renderer.setSize(window.innerWidth, window.innerHeight);
-      // document.body.appendChild( renderer.domElement );
-      // use ref as a mount point of the Three.js scene instead of the document.body
       ref.current.appendChild(renderer.domElement);
-      const geometry = new THREE.BoxGeometry(1, 1, 1);
-      const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    //   const geometry = new THREE.BoxGeometry(1, 1, 1);
+    //   const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
             let materialArray = [];
             let texture_ft = new THREE.TextureLoader().load('assets/browncloud_ft.jpg');
             let texture_bk = new THREE.TextureLoader().load('assets/browncloud_bk.jpg');
@@ -95,9 +93,9 @@ export default function Skybox() {
 
 
 
-      const cube = new THREE.Mesh(geometry, material);
+    //   const cube = new THREE.Mesh(geometry, material);
       scene.add(skybox);
-      scene.add(cube);
+    //   scene.add(cube);
       camera.position.z = 5;
       window.addEventListener( 'resize', onWindowResize, false );
       animate();

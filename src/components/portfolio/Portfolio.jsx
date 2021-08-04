@@ -3,6 +3,7 @@ import PortfolioList from "../portfolioList/portfolioList";
 import { useEffect, useState, useRef } from "react";
 import { featuredPortfolio, Portfolio1, Portfolio2, Portfolio3 } from "../../data";
 import Modal from '@material-ui/core/Modal';
+import Skybox from "../skybox/Skybox";
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -89,6 +90,10 @@ export default function Portfolio(active) {
 
     return (
         <div className="portfolio" id="portfolio">
+            <div className="bg">
+                <Skybox />
+            </div>
+            <div className="prtContainer">
             <h1>Portfolio</h1><br />
             <ul>
                 {list.map((item) => (
@@ -127,6 +132,7 @@ export default function Portfolio(active) {
                                     </div>
                                 </div>
                     </Modal>
+                </div>
             </div>
         </div>
     );

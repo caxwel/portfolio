@@ -1,5 +1,5 @@
 import "./contact.scss";
-// import { Send } from "@material-ui/icons";
+import Skybox from "../skybox/Skybox";
 import { useState } from "react";
 
 export default function Contact() {
@@ -30,8 +30,7 @@ export default function Contact() {
     return (
         <div className="contact" id="contact">
             <div className="left">
-                <div className="imgContainer">
-                </div>
+                <Skybox />
             </div>
             <div className="right">
                 <h2>Contact</h2>
