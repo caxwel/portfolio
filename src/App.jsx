@@ -5,7 +5,8 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Highlights from "./components/highlights/Highlights";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
-import Menu from "./components/menu/Menu"
+import Menu from "./components/menu/Menu";
+import Skybox from "./components/skybox/Skybox";
 import { useState } from "react";
 
 function App() {

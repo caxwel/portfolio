@@ -1,0 +1,20 @@
+@import "../../global.scss";
+
+Skybox {
+    width: 100vw;
+            height: 900px;
+            left: 0;
+            // background: url("../../fonts/ocean1.png");
+            background-color: $background;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            // float: right;
+            overflow: hidden;
+
+            @include mobile {
+                align-items: flex-start;
+                margin-left: 40%;
+                
+            }
+}

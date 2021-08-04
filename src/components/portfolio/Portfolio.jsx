@@ -27,8 +27,6 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-
-
 export default function Portfolio(active) {
     const [selected, setSelected] = useState("cat1");
     const [data, setData] = useState([]);
