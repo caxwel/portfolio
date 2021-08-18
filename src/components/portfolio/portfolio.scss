@@ -14,7 +14,7 @@
 
     .prtContainer {
         // background-color: rgba(255, 255, 255, 0.7);
-        background-color: transparent;
+        background-color: $background;
         z-index: 1;
         position: absolute;
         width: 50%;
@@ -27,6 +27,7 @@
         align-items: center;
 
         @include mobile {
+            // background: transparent;
             width: 80%;
             min-width: 80%;
         }

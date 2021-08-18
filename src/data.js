@@ -2,21 +2,21 @@ export const featuredPortfolio = [
     {
         id: 1,
         title: "overcast",
-        img: "assets/web-overcast.png",
+        img: "assets/overcast.png",
         desc: "Music-playing app that generates playlists based on weather at user's location & genre choice. Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
         tech: "React/Redux, NodeJS/Express, PostgreSQL, HTML/CSS"
     },
     {
         id: 2,
         title: "destiNations",
-        img: "assets/destinationslogo.png",
+        img: "assets/dest.png",
         desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
         tech: "Unity/C#, Node.js/Express, Firebase"
     },
     {
         id: 3,
         title: "CSS Art & Creative Css",
-        img: "assets/web-tarot.png",
+        img: "assets/cssart.png",
         desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
         tech: "HTML/CSS, patience"
     },
@@ -40,7 +40,7 @@ export const Portfolio2 = [
     {
         id: 2,
         title: "overcast",
-        img: "assets/web-overcast.png",
+        img: "assets/overcast.png",
         desc: "Music-playing app that generates playlists based on weather at user's location & genre choice. Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
         tech: "React/Redux, NodeJS/Express, PostgreSQL, HTML/CSS"
     },
@@ -64,14 +64,14 @@ export const Portfolio3 = [
     {
         id: 1,
         title: "destiNations",
-        img: "assets/destinationslogo.png",
+        img: "assets/dest.png",
         desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
         tech: "Unity/C#, Node.js/Express, Firebase"
     },
     {
         id: 2,
         title: "CSS Art & Creative Css",
-        img: "assets/web-tarot.png",
+        img: "assets/cssart.png",
         desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
         tech: "HTML/CSS, patience"
     }
@@ -114,27 +114,27 @@ export const descriptions  = [
         icon: "assets/moon.png",
         title: "CSS Art & Creative Css",
         desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
-        img: "assets/web-tarot.png"
+        img: "assets/cssart.png"
     },
     {
         id: "2",
         icon: "assets/moon.png",
         title: "overcast",
         desc: "Music-playing app that generates playlists based on weather at user's location & genre choice. Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
-        img: "assets/web-overcast.png"
+        img: "assets/overcast.png"
     },
     {
         id: "3",
         icon: "assets/moon.png",
         title: "destiNations",
         desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
-        img: "assets/mobile-dest.png"
+        img: "assets/dest.png"
     },
     {
         id: "4",
         icon: "assets/moon.png",
         title: "KNIGHTS ONLY",
         desc: "Web app that draws you, a knight, a personal crest based on your answers to various word association questions. Images are drawn and added to question by question on HTML canvas.",
-        img: "assets/web-knights.png"
+        img: "assets/knightsonly.png"
     }
 ];
