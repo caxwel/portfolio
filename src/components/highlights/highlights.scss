@@ -6,9 +6,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 
     a, a:visited, a:active, a:hover, a:link {
         text-decoration: none;
+    }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .back {
@@ -17,6 +24,15 @@
         color: #000;
         font-size: 70px;
         cursor: pointer;
+        @media screen and (max-width: 1100px) {
+            left: 40px;
+        }
+        @media screen and (max-width: 800px) {
+            left: 20px;
+        }
+        @include mobile {
+            display: none;
+        }
     }
 
     .forward {
@@ -25,24 +41,54 @@
         color: #000;
         font-size: 70px;
         cursor: pointer;
+        @media screen and (max-width: 1100px) {
+            right: 40px;
+        }
+        @media screen and (max-width: 800px) {
+            right: 20px;
+        }
+        @include mobile {
+            display: none;
+        }
     }
 
     .slider {
-        height: 350px;
+        height: 100%;
         display: flex;
         position: absolute;
         left: 0;
         transition: all 1s ease-out;
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            min-height: 800px;
+        }
+
+        @media screen and (max-height: 670px) and (max-width: 375px) {
+            min-height: 630px;
+        }
 
         .container {
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+
+            @include mobile {
+                height: 22%;
+                width: 90vw;
+                padding: 5px 0;
+            }
 
             .item {
-                width: 700px;
-                height: 100%;
+                width: 60vw;
+                min-width: 400px;
+                height: 50vh;
+                min-height: 300px;
                 background-color: $background;
                 border-radius: 10px;
                 border-image-source: url('../../fonts/frameborder1.png');
@@ -56,8 +102,13 @@
                 overflow: hidden;
 
                 @include mobile {
-                    border-image-source: url('../../fonts/frameborder2.png');
-                    border-image-slice: 230;
+                    border-image-source: url('../../fonts/frameborder1.png');
+                    border-image-slice: 170;
+                    height: 70%;
+                    width: 90%;
+                    min-width: 10px;
+                    min-height: 100px;
+                    border-width: 25px;
                 }
 
                 .left {
@@ -78,16 +129,13 @@
                         .imgContainer {
                             width: 40px;
                             height: 40px;
+                            min-height: 40px;
                             border-radius: 50%;
-                            background-color: lightseagreen;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-
-                            img {
-                                width: 25px;
-                                height: 25px;
-                            }
+                            font-size: 4rem;
+                            background-color: crimson;
                         }
 
                         h2 {

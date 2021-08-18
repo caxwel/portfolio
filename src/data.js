@@ -9,7 +9,7 @@ export const featuredPortfolio = [
     {
         id: 2,
         title: "destiNations",
-        img: "assets/mobile-dest.png",
+        img: "assets/destinationslogo.png",
         desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
         tech: "Unity/C#, Node.js/Express, Firebase"
     },
@@ -33,7 +33,7 @@ export const Portfolio2 = [
     {
         id: 1,
         title: "KNIGHTS ONLY",
-        img: "assets/web-knights.png",
+        img: "assets/knightsonly.png",
         desc: "Web app that draws you, a knight, a personal crest based on your answers to various word association questions. Images are drawn and added to question by question on HTML canvas.",
         tech: "Vue, Node.js, HTML/CSS"
     },
@@ -47,14 +47,14 @@ export const Portfolio2 = [
     {
         id: 3,
         title: "Crypticgen",
-        img: "assets/web-crypticgen.png",
+        img: "assets/crypticgen.png",
         desc: "Personal solo project of a web app that genenerates interesting writing prompts from a database of unusual statements, with option to share to twitter.",
         tech: "HTML/CSS, PostgreSQL"
     },
     {
         id: 4,
         title: "starfield",
-        img: "assets/web-starfield.png",
+        img: "assets/starfield.png",
         desc: "Interactive project built in Unity/C# over the course of a week with the goal of rapidly learning new technologies and languages.",
         tech: "Unity/C#"
     },
@@ -64,7 +64,7 @@ export const Portfolio3 = [
     {
         id: 1,
         title: "destiNations",
-        img: "assets/mobile-dest.png",
+        img: "assets/destinationslogo.png",
         desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
         tech: "Unity/C#, Node.js/Express, Firebase"
     },

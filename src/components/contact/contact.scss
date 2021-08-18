@@ -18,7 +18,6 @@
             width: 100vw;
             height: 900px;
             flex-direction: column;
-            background: url("../../fonts/ocean1.png");
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -53,7 +52,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgba(255, 255, 255, 0.7);
+        // background-color: rgba(255, 255, 255, 0.7);
+        background-color: $background;
 
         h2 {
             font-size: 40px;
@@ -61,6 +61,7 @@
             font-weight: 400;
             margin: 0;
             z-index: 3;
+            text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
         }
 
         form {
@@ -76,6 +77,10 @@
                 width: 300px;
                 height: 30px;
                 font-size: 14px;
+
+                @include mobile {
+                    margin: 5px 0;
+                }
             }
 
             textarea {
@@ -84,6 +89,10 @@
                 font-size: 14px;
                 margin-bottom: 0;
                 resize: none;
+
+                @include mobile {
+                    margin: 5px 0;
+                }
             }
 
             button {
@@ -95,6 +104,9 @@
                 border-radius: 15px;
                 font-family: "kazimirtext-black", serif;
                 cursor: pointer;
+                @include mobile {
+                    margin: 5px 0;
+                }
             }
 
             #thanks {
@@ -108,6 +120,7 @@
         @include mobile {
             width: 100%;
             max-width: 100%;
+            background: transparent;
         }
     }
 }

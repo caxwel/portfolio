@@ -9,11 +9,15 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     paper: {
         position: 'absolute',
-        width: 400,
-        backgroundColor: theme.palette.background.paper,
-        border: 'none',
-        borderRadius: '20px',
-        boxShadow: theme.shadows[5],
+        width: 700,
+        height: 450,
+        backgroundColor: "transparent",
+        borderWidth: 70,
+        borderImageSource: 'url(../../fonts/frameborder1.png)',
+        borderImageSlice: 180,
+        borderImageRepeat: 'stretch',
+        borderRadius: 10,
+        boxShadow: 'none',
         padding: theme.spacing(2, 4, 3),
         top: '50%',
         left: '50%',
@@ -118,7 +122,9 @@ export default function Portfolio(active) {
                                 aria-labelledby="simple-modal-title"
                                 aria-describedby="simple-modal-description"
                             >
-                                <div className={classes.paper}>
+                            
+                            <div className={classes.paper}>
+                                <div className="lightboxWrapper">
                                     <div className={`paper-content`}>
                                         <h2 id="simple-modal-title" ref={titleRef}>
                                         {titleRef.current}
@@ -131,6 +137,7 @@ export default function Portfolio(active) {
                                         </p>
                                     </div>
                                 </div>
+                            </div>
                     </Modal>
                 </div>
             </div>

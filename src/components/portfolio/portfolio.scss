@@ -13,16 +13,48 @@
     }
 
     .prtContainer {
-        background-color: rgba(255, 255, 255, 0.7);
+        // background-color: rgba(255, 255, 255, 0.7);
+        background-color: transparent;
         z-index: 1;
         position: absolute;
         width: 50%;
         min-width: 50%;
+        max-width: 700px;
         height: 100%;
         min-height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include mobile {
+            width: 80%;
+            min-width: 80%;
+        }
+
+        @media screen and (min-width: 1550px) {
+            width: 700px;
+            min-width: 700px;
+        }
+
+        @media screen and (max-width: 1115px) {
+            width: 70%;
+            min-width: 70%;
+        }
+
+        @media screen and (max-width: 1062px) {
+            width: 80%;
+            min-width: 80%;
+        }
+
+        @media screen and (max-width: 928px) {
+            width: 90%;
+            min-width: 90%;
+        }
+
+        @media screen and (max-width: 743px) {
+            width: 80%;
+            min-width: 80%;
+        }
     }
 
     background: transparent;
@@ -35,9 +67,15 @@
         font-size: 3rem;
         z-index: 1;
         color: $mainColor;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
 
         @media screen and (max-width: 375px) {
             margin-top: -5px;
+        }
+
+        @include mobile {
+            margin-bottom: 10px;
         }
     }
 
@@ -62,9 +100,13 @@
         justify-content: center;
         flex-wrap: wrap;
 
+        @include mobile {
+            height: inherit;
+        }
+
         .item {
             width: 220px;
-            height: 150px;
+            height: 200px;
             border-radius: 20px;
             box-shadow: 0px 0px 15px -8px #000;
             margin: 10px 20px;
@@ -72,10 +114,28 @@
             align-items: center;
             justify-content: center;
             color: $background;
+            background: $mainColor;
             position: relative;
             overflow: hidden;
             transition: all .5s ease;
             cursor: pointer;
+
+            @include mobile {
+                width: 150px;
+                height: 40%;
+            }
+
+            @media screen and (max-width: 499px) {
+                width: 300px;
+                height: 30%;
+                margin: 10px 10px;
+            }
+
+            @media screen and (max-width: 447px) {
+                width: 300px;
+                height: 20%;
+                margin: 5px 10px;
+            }
             
             h3 {
                 position: absolute;
@@ -122,8 +182,39 @@
 
             .item {
                 width: 200px;
-                height: 100px;
             }
         }
+    }
+}
+
+.lightboxWrapper {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    background-color: transparent;
+                border-radius: 10px;
+                border-image-source: url('../../fonts/frameborder1.png');
+                border-image-slice: 180;
+                border-image-repeat: stretch;
+                border-width: 70px;
+                border-style: solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:focus {
+        border: none;
+    }
+    &:focus-visible {
+        outline: none;
+        
+    }
+
+    .paper-content {
+        height: 100%;
+        background: $background;
     }
 }
