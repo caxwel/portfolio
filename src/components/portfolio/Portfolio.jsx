@@ -5,6 +5,7 @@ import { featuredPortfolio, Portfolio1, Portfolio2, Portfolio3 } from "../../dat
 import Modal from '@material-ui/core/Modal';
 import Skybox from "../skybox/Skybox";
 import { makeStyles } from '@material-ui/core/styles';
+import { Cancel } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -42,6 +43,7 @@ export default function Portfolio(active) {
     const titleRef = useRef("hello");
     const descRef = useRef("hello");
     const techRef = useRef("helllllo");
+    const imgRef = useRef("image");
 
     const handleOpen = (x) => {
         setOpen(true);
@@ -49,6 +51,7 @@ export default function Portfolio(active) {
         titleRef.current = data[boxId].title;
         descRef.current = data[boxId].desc;
         techRef.current = data[boxId].tech;
+        imgRef.current = data[boxId].img;
       };
     
       const handleClose = () => {
@@ -98,17 +101,19 @@ export default function Portfolio(active) {
                 <Skybox />
             </div>
             <div className="prtContainer">
-            <h1>Portfolio</h1><br />
-            <ul>
-                {list.map((item) => (
-                    <PortfolioList 
-                    title = {item.title} 
-                    active = {selected === item.id} 
-                    setSelected = {setSelected} 
-                    id = {item.id}
-                    />
-                ))}
-            </ul>
+                <div className="listContainer">
+                    <h1>Portfolio</h1><br />
+                    <ul>
+                        {list.map((item) => (
+                            <PortfolioList 
+                            title = {item.title} 
+                            active = {selected === item.id} 
+                            setSelected = {setSelected} 
+                            id = {item.id}
+                            />
+                        ))}
+                    </ul>
+            </div>
             <div className="container">
                 {data.map((d) => (
                     <div className={`item ${d.group} ${d.id}` } >
@@ -126,15 +131,27 @@ export default function Portfolio(active) {
                             <div className={classes.paper}>
                                 <div className="lightboxWrapper">
                                     <div className={`paper-content`}>
-                                        <h2 id="simple-modal-title" ref={titleRef}>
-                                        {titleRef.current}
-                                        </h2>
-                                        <p id="simple-modal-description" ref={descRef}>
-                                        {descRef.current}
-                                        </p>
-                                        <p id="simple-modal-description" ref={techRef}>
-                                        {techRef.current}
-                                        </p>
+                                        <div className="upper">
+                                            <h2 id="simple-modal-title" ref={titleRef}>
+                                            {titleRef.current}
+                                            </h2>
+                                            <Cancel id="closeOut" onClick={handleClose} />
+                                        </div>
+                                        <div className="middle">
+                                            <div className="text">
+                                                <p id="simple-modal-description" ref={descRef}>
+                                                    {descRef.current}
+                                                </p>
+                                                <p id="simple-modal-description" ref={techRef}>
+                                                    <b id="bb">Tech:</b> {techRef.current}
+                                                </p>
+                                            </div>
+                                            <div className="notText">
+                                                <div className="imgCont">
+                                                    <img src={imgRef.current} alt={titleRef.current} />
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

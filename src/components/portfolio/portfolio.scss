@@ -20,13 +20,14 @@
         width: 50%;
         min-width: 50%;
         max-width: 700px;
-        height: 100%;
-        min-height: 100%;
+        height: calc(100vh - 70px);
+        min-height: 300px;
+        max-height: calc(100vh - 70px);
         display: flex;
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        
+
         @include mobile {
             // background: transparent;
             width: 80%;
@@ -65,33 +66,47 @@
     align-items: center;
     overflow: hidden;
 
-    h1 {
-        font-size: 3rem;
-        z-index: 1;
-        color: $mainColor;
-        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-
-
-        @media screen and (max-width: 375px) {
-            margin-top: -5px;
-        }
-
-        @include mobile {
-            margin-bottom: 10px;
-        }
-    }
-
-    ul {
-        margin: 10px;
-        padding: 0;
-        list-style: none;
+    .listContainer {
+        width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20%;
 
-        @media screen and (max-width: 414px) {
-            margin-top: -30px;
-            align-items: center;
-            margin-bottom: 20px;
+        h1 {
+            font-size: 3rem;
+            z-index: 1;
+            color: $mainColor;
+            padding: 10px 0;
+            margin: 0;
+            text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+
+            @media screen and (max-width: 375px) {
+                margin-top: -5px;
+            }
+
+            @include mobile {
+                margin-bottom: 10px;
+            }
+        }
+
+        ul {
+            margin: 10px;
+            padding: 0;
+            list-style: none;
+
+            @media screen and (max-width: 414px) {
+                margin-top: -30px;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        ul li {
+            display: inline;
+            list-style: none;
         }
     }
 
@@ -101,10 +116,11 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        height: 80%;
 
-        @include mobile {
-            height: inherit;
-        }
+        // @include mobile {
+        //     height: inherit;
+        // }
 
         .item {
             width: 220px;
@@ -122,9 +138,21 @@
             transition: all .5s ease;
             cursor: pointer;
 
+            h3 {
+                font-family: 'kazimirtext-black';
+                color: black;
+                text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+                text-align: center;
+            }
+
             @include mobile {
                 width: 150px;
                 height: 40%;
+            }
+            @media screen and (max-width: 825px) {
+                width: 40%;
+                height: 30%;
+                margin: 10px 10px;
             }
 
             @media screen and (max-width: 499px) {
@@ -191,22 +219,23 @@
 
 .lightboxWrapper {
     position: absolute;
-    width: 600px;
+    width: 80%;
     height: 300px;
     background-color: transparent;
-                border-radius: 10px;
-                border-image-source: url('../../fonts/frameborder1.png');
-                border-image-slice: 180;
-                border-image-repeat: stretch;
-                border-width: 70px;
-                border-style: solid;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: hidden;
+    border-radius: 10px;
+    border-image-source: url('../../fonts/frameborder1.png');
+    border-image-slice: 180;
+    border-image-repeat: stretch;
+    border-width: 70px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     &:focus {
         border: none;
     }
@@ -217,6 +246,79 @@
 
     .paper-content {
         height: 100%;
+        width: 100%;
         background: $background;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        #simple-modal-title {
+            font-family: 'kazimirtext-black';
+            font-size: 26px;
+        }
+
+        #bb {
+            font-weight: 400;
+            font-family: 'kazimirtext-black';
+        }
+
+        #closeOut {
+            font-size: 40px;
+            transition: all .35s ease;
+
+            &:hover {
+                color: $hover;
+                cursor: pointer;
+            }
+        }
+
+        .upper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 20%;
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            height: 80%;
+
+            p {
+                width: 100%;
+            }
+
+            .text {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .notText {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .imgCont {
+                    border-radius: 20px;
+                    width: 200px;
+                    height: 200px;
+                    border: 3px double $mainColor;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
     }
 }

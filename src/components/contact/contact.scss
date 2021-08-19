@@ -114,6 +114,12 @@
                 color: $mainColor;
                 font-family: "kazimirtext-black", serif;
                 bottom: -20px;
+                text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+                @media screen and (max-width: 817px) {
+                    bottom: -25px;
+                    font-size: 0.8rem;
+                }
             }
         }
 
