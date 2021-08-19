@@ -23,9 +23,12 @@ export default function Intro() {
                 <Skybox />
             </div>
             <div className="right">
+                <img src="assets/linkfl2.png" alt="" id="flower" />
                 <div className="wrapper">
                     <h2>Hi there! It's me,</h2>
-                    <h1>Max Turer,</h1>
+                    <div className="nameTitle">
+                        <h1>Max Turer</h1>
+                    </div>
                     <h3><span ref={textRef}></span></h3>
                 </div>
                 <a href="#highlights" className="logo">

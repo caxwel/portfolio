@@ -10,7 +10,7 @@ import { Cancel } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
     paper: {
         position: 'absolute',
-        width: 700,
+        width: '700',
         height: 450,
         backgroundColor: "transparent",
         borderWidth: 70,
