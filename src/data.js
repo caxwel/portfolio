@@ -23,7 +23,7 @@ export const featuredPortfolio = [
     {
         id: 4,
         title: "YWCA",
-        img: "assets/contrib-ywca.png",
+        img: "assets/ywca.png",
         desc: "Website build and continued maintenance for YWCA Stand Against Racism and A Week Without Violence",
         tech: "HTML/CSS/SASS, WordPress, JavaScript, PHP"
     },
@@ -81,28 +81,28 @@ export const Portfolio1 = [
     {
         id: 1,
         title: "YWCA",
-        img: "assets/contrib-ywca.png",
+        img: "assets/ywca.png",
         desc: "Website build and continued maintenance for YWCA Stand Against Racism and A Week Without Violence",
         tech: "HTML/CSS/SASS, WordPress, JavaScript, PHP"
     },
     {
         id: 2,
         title: "BIDMC Where Extraordinary Lives",
-        img: "assets/contrib-bidmc.png",
+        img: "assets/bidmc.png",
         desc: "Page build for Beth Israel Deaconess Medical Center's event unveiling of their new building.",
         tech: "HTML/CSS/SASS, WordPress, JavaScript, PHP"
     },
     {
         id: 3,
         title: "The Nature Conservancy",
-        img: "assets/contrib-tnc.png",
+        img: "assets/tnc.png",
         desc: "Website build for The Nature Conservancy, built as part of a larger team.",
         tech: "HTML/CSS/SASS, JavaScript, Engaging Networks, AAA Accessibility"
     },
     {
         id: 4,
         title: "Diabetes Canada Lace Up",
-        img: "assets/contrib-dbca.png",
+        img: "assets/laceup.png",
         desc: "Stylesheet and page/component build for Diabetes Canada's event pages.",
         tech: "HTML/CSS/SASS, JavaScript, Luminate"
     },
@@ -111,30 +111,30 @@ export const Portfolio1 = [
 export const descriptions  = [
     {
         id: "1",
-        icon: "assets/moon.png",
+        icon: "assets/moongift.gif",
         title: "CSS Art & Creative Css",
         desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
         img: "assets/cssart.png"
     },
     {
         id: "2",
-        icon: "assets/moon.png",
+        icon: "assets/overcastlogo.png",
         title: "overcast",
         desc: "Music-playing app that generates playlists based on weather at user's location & genre choice. Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
-        img: "assets/overcast.png"
+        img: "assets/overm.png"
     },
     {
         id: "3",
-        icon: "assets/moon.png",
+        icon: "assets/destinationslogo.png",
         title: "destiNations",
         desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
-        img: "assets/dest.png"
+        img: "assets/destm.png"
     },
     {
         id: "4",
-        icon: "assets/moon.png",
+        icon: "assets/moont.png",
         title: "KNIGHTS ONLY",
         desc: "Web app that draws you, a knight, a personal crest based on your answers to various word association questions. Images are drawn and added to question by question on HTML canvas.",
-        img: "assets/knightsonly.png"
+        img: "assets/knightsm.png"
     }
 ];

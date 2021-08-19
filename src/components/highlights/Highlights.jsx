@@ -1,5 +1,5 @@
 import "./highlights.scss";
-import { ArrowBack, ArrowDownward, ArrowForward, Brightness3 } from "@material-ui/icons";
+import { ArrowBack, ArrowDownward, ArrowForward } from "@material-ui/icons";
 import { descriptions } from "../../data";
 import { useState } from "react";
 
@@ -19,7 +19,7 @@ export default function Highlights() {
                         <div className="left">
                             <div className="leftContainer">
                                 <div className="imgContainer">
-                                    <Brightness3 />
+                                    <img src={d.icon} alt={d.title} />
                                 </div>
                                 <h2>{d.title}</h2>
                                 <p>
