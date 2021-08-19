@@ -113,28 +113,32 @@ export const descriptions  = [
         id: "1",
         icon: "assets/moongift.gif",
         title: "CSS Art & Creative Css",
-        desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time. A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
+        desc: "Talk given about my strategies as an artist specializing in traditional media making CSS art for the first time.",
+        desc2: "A highly reccommended wild ride of fun art, process details, and easy-to-follow instructions.",
         img: "assets/cssart.png"
     },
     {
         id: "2",
         icon: "assets/overcastlogo.png",
         title: "overcast",
-        desc: "Music-playing app that generates playlists based on weather at user's location & genre choice. Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
+        desc: "Music-playing app that generates playlists based on weather at user's location & genre choice.",
+        desc2: "Made as Tech Lead of a team of five engineers in partnership with Rakuten RapidAPI.",
         img: "assets/overm.png"
     },
     {
         id: "3",
         icon: "assets/destinationslogo.png",
         title: "destiNations",
-        desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries. Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
+        desc: "An educational, interactive mobile app that displays real flight paths and the planes' destination countries.",
+        desc2: "Features a passport to collect countries visited, a scavenger hunt to learn country facts, and 3D graphics rendered by yours truly! Made as Frontend Lead in a team of five engineers.",
         img: "assets/destm.png"
     },
     {
         id: "4",
         icon: "assets/moont.png",
         title: "KNIGHTS ONLY",
-        desc: "Web app that draws you, a knight, a personal crest based on your answers to various word association questions. Images are drawn and added to question by question on HTML canvas.",
+        desc: "Web app that draws you, a knight, a personal crest based on your answers to various word association questions.",
+        desc2: "Images are drawn and added to question by question on HTML canvas.",
         img: "assets/knightsm.png"
     }
 ];

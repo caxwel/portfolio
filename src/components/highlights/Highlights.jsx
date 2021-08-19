@@ -23,7 +23,7 @@ export default function Highlights() {
                                 </div>
                                 <h2>{d.title}</h2>
                                 <p>
-                                    {d.desc}
+                                    <span>{d.desc}</span> <span id="desc2">{d.desc2}</span>
                                 </p>
                                 <a className="more" href="/#portfolio"><span>Learn More Below</span><ArrowDownward className="arrow"/></a>
                             </div>
