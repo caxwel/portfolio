@@ -1,5 +1,5 @@
 import "./topbar.scss";
-import { GitHub, Mail } from "@material-ui/icons";
+import { GitHub, Mail, ArrowDownward } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
@@ -17,6 +17,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     </div>
                 </div>
                 <div className="right">
+                <div class="pdfImg"><img src="assets/pdflink.png" alt="CV download" /><div class="overlayPdf"><a href="/assets/assets/pdflink.png" download><ArrowDownward /></a></div></div>
                     <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
                         <span className="line1"></span>
