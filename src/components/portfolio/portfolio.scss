@@ -355,6 +355,18 @@
                 }
             }
 
+            .see {
+                padding: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                a {
+                    font-family: 'kazimirtext-black';
+                    display: flex;
+                flex-direction: row;
+                align-items: center;
+                }
+            }
+
             .text {
                 width: 60%;
                 display: flex;

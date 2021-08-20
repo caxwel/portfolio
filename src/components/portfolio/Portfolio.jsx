@@ -5,7 +5,7 @@ import { featuredPortfolio, Portfolio1, Portfolio2, Portfolio3 } from "../../dat
 import Modal from '@material-ui/core/Modal';
 import Skybox from "../skybox/Skybox";
 import { makeStyles } from '@material-ui/core/styles';
-import { Cancel } from "@material-ui/icons";
+import { Cancel, ArrowBack } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -44,6 +44,7 @@ export default function Portfolio(active) {
     const descRef = useRef("hello");
     const techRef = useRef("helllllo");
     const imgRef = useRef("image");
+    const linkRef = useRef("#");
 
     const handleOpen = (x) => {
         setOpen(true);
@@ -52,6 +53,7 @@ export default function Portfolio(active) {
         descRef.current = data[boxId].desc;
         techRef.current = data[boxId].tech;
         imgRef.current = data[boxId].img;
+        linkRef.current = data[boxId].link;
       };
     
       const handleClose = () => {
@@ -141,6 +143,9 @@ export default function Portfolio(active) {
                                             <div className="text">
                                                 <p id="simple-modal-description" ref={descRef}>
                                                     {descRef.current}
+                                                </p>
+                                                <p id="simple-modal-description" ref={linkRef} className="see">
+                                                    <a href={linkRef.current}>See for yourself!   <ArrowBack /> </a>
                                                 </p>
                                                 <p id="simple-modal-description" ref={techRef}>
                                                     <b id="bb">Tech:</b> {techRef.current}

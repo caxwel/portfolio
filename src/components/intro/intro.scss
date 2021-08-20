@@ -117,10 +117,14 @@
             margin: 0;
             font-size: 1.5rem;
             font-family: "kazimirtext-light", serif;
-            background-color: $background;
+            background-color: RGBA(122, 104, 79, 0.7);
             width: 300px;
             padding: 5px;
-            border-radius: 10px;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-top: 2px;
+            color: $background;
+            text-shadow: none;
 
             span {
                 font-size: inherit;
