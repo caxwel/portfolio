@@ -23,12 +23,12 @@
     "yarn": "^1.22.10"
   },
   "scripts": {
-    "start": "yarn && yarn build",
+    "start": "node server.js",
     "practice": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "node server.js"
+    "heroku-postbuild": "yarn build"
   },
   "eslintConfig": {
     "extends": [
