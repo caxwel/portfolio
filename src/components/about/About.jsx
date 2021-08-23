@@ -12,8 +12,9 @@ export default function About() {
                     <div className="right">
                     <h1>About Me</h1>
                     <div className="top">
-                        <GitHub className="start" />
-                        <LinkedIn className="end" />
+                        <a href="https://github.com/caxwel"><GitHub className="start" /></a>
+                        <a href="assets/MTCV.pdf" download><div className="cv"><span>CV</span></div></a>
+                        <a href="linkedin.com/maxturer"><LinkedIn className="end" /></a>
                     </div>
                     <div className="center">
                         <span>Hello! I’m a software engineer and artist based in Tokyo, living in my fourth country and most likely drawing in my fiftieth sketchbook.</span>

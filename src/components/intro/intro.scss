@@ -68,6 +68,9 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -60%);
+                @include mobile {
+                    width: 50vw;
+                }
         }
 
         .wrapper {
@@ -98,7 +101,28 @@
             font-weight: normal;
             font-family: 'callingangels';
             // text-shadow: none;
+            @media screen and (max-width: 1215px) {
+                font-size: 10rem;
+            }
+            @media screen and (max-width: 790px) {
+                font-size: 8rem;
+            }
             @include mobile {
+                font-size: 7.5rem;
+            }
+            @media screen and (max-width: 600px) {
+                font-size: 6.5rem;
+            }
+            @media screen and (max-width: 520px) {
+                font-size: 5.5rem;
+            }
+            @media screen and (max-width: 436px) {
+                font-size: 5rem;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 4.5rem;
+            }
+            @media screen and (max-width: 350px) {
                 font-size: 3.5rem;
             }
         }
@@ -108,8 +132,31 @@
             font-size: 3rem;
             margin-bottom: 0;
             font-family: 'kazimirtext-black';
+            @media screen and (max-width: 1215px) {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
+            @media screen and (max-width: 790px) {
+                font-size: 2rem;
+                margin-bottom: 1.2rem;
+            }
             @include mobile {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 600px) {
                 font-size: 1.5rem;
+                margin-bottom: 1.7rem;
+            }
+            @media screen and (max-width: 520px) {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            @media screen and (max-width: 436px) {
+                margin-bottom: 2.5rem;
+            }
+            @media screen and (max-width: 350px) {
+                font-size: 1.3rem;
+                margin-bottom: 3.4rem;
             }
         }
 
@@ -133,8 +180,30 @@
                 font-weight: 200;
             }
 
+            @media screen and (max-width: 790px) {
+                font-size: 1.3rem;
+                width: 250px;
+            }
             @include mobile {
+                margin-top: 0.5rem;
                 font-size: 1rem;
+                width: 220px;
+            }
+            @media screen and (max-width: 600px) {
+                margin-top: 0.8rem;
+                width: 200px;
+            }
+            @media screen and (max-width: 520px) {
+                margin-top: 1.5rem;
+                width: 200px;
+            }
+            @media screen and (max-width: 436px) {
+                margin-top: 1.8rem;
+                width: 180px;
+            }
+            @media screen and (max-width: 350px) {
+                margin-top: 3rem;
+                width: 160px;
             }
         }
     }

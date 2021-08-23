@@ -13,11 +13,6 @@
         margin-top: 1rem;
     }
 
-    a {
-        color: $background;
-        text-decoration: underline;
-    }
-
     .container {
         width: 100%;
         height: 100%;
@@ -97,22 +92,50 @@
 
                 .top {
                     display: flex;
+                    width: 100%;
+                    flex-direction: row;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: space-evenly;
                     margin-bottom: 1rem;
     
-                        .start, .end {
+                        .start, .cv, .end {
                             height: 25px;
+                                color: $mainColor;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: all .35s ease;
+
+                                &:hover {
+                                    color: $hover;
+                                }
+                            
                             @include mobile {
                                 margin-bottom: 40px;
                                 height: 15px;
-                                color: #fff;
+                                color: $background;
+                                a {
+                                    color: $background;
+                                }
+                            }
+                        }
+
+                        .cv {
+                            span {
+                                font-family: 'kazimirtext-black';
+                                font-size: 18px;
+                                margin-top: 0;
+                                @include mobile {
+                                    font-size: 13px;
+                                    padding-bottom: 15px;
+                                    color: $background;
+                                }
                             }
                         }
     
-                        .start {
-                            margin-right: 100px;
-                        }
+                        // .start {
+                        //     margin-right: 100px;
+                        // }
                 }
     
                 .center {
@@ -128,6 +151,15 @@
                     justify-content: center;
                     span {
                         padding: 1vh 0;
+                    }
+
+                    a {
+                        color: $background;
+                        text-decoration: underline !important;
+                        transition: all .35s ease;
+                        &:hover {
+                            color: $hover;
+                        }
                     }
 
                     @media screen and (max-width: 849px) {
