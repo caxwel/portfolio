@@ -9,7 +9,7 @@ import Menu from "./components/menu/Menu";
 import { useState } from "react";
 
 function App() {
-  const [menuOpen,setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -19,7 +19,7 @@ function App() {
         <Highlights />
         <Portfolio />
         <About />
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </div>
   );
