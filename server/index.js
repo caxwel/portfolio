@@ -3,6 +3,8 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const path = require("path");
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 require("dotenv").config();
 
 const app = express();
@@ -17,11 +19,29 @@ app.get("/*", (req, res) => {
 
 app.listen(process.env.PORT || 5000, () => console.log("Server Running"));
 
+const oauth2Client = new OAuth2(
+  process.env.ID,
+  process.env.SECRET,
+  "https://developers.google.com/oauthplayground"
+);
+
+oauth2Client.setCredentials({
+  refresh_token: process.env.REFRESH,
+});
+const accessToken = oauth2Client.getAccessToken();
+
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "ixerfade@gmail.com",
-    pass: "hilda420",
+    type: "OAuth2",
+    user: process.env.EMAIL,
+    clientId: process.env.ID,
+    clientSecret: process.env.SECRET,
+    refreshToken: process.env.REFRESH,
+    accessToken: accessToken,
+  },
+  tls: {
+    rejectUnauthorized: false,
   },
 });
 
