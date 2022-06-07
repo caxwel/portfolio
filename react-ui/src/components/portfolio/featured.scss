@@ -39,6 +39,10 @@
             width: 150px;
             height: 40%;
         }
+        @media screen and (max-width: 1549px) {
+                height: 180px;
+        }
+
         @media screen and (max-width: 825px) {
             width: 40%;
             height: 30%;
@@ -107,6 +111,7 @@
 
         .item {
             width: 200px;
+            height: 80px;
         }
     }
 }

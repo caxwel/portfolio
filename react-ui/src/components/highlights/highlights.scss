@@ -103,13 +103,12 @@
                 overflow: hidden;
 
                 @include mobile {
-                    border-image-source: url('../../fonts/frameborder1.png');
-                    border-image-slice: 170;
+                    border-image-source: none;
+                    border: none;
                     height: 70%;
                     width: 90%;
                     min-width: 10px;
                     min-height: 100px;
-                    border-width: 25px;
                 }
 
                 .left {

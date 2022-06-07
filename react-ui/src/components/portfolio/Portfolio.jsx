@@ -3,7 +3,6 @@ import PortfolioList from "../portfolioList/portfolioList";
 import Featured from "./featured/Featured";
 import Contributions from "./contributions/Contributions";
 import Web from "./web/Web";
-import Other from "./other/Other";
 import { useEffect, useState, lazy } from "react";
 import Skybox from "../skybox/Skybox";
 
@@ -17,15 +16,11 @@ export default function Portfolio(active) {
     },
     {
       id: "cat2",
-      title: "Contributions",
-    },
-    {
-      id: "cat3",
       title: "Web",
     },
     {
-      id: "cat4",
-      title: "Other",
+      id: "cat3",
+      title: "Solo",
     },
   ];
 
@@ -38,11 +33,8 @@ export default function Portfolio(active) {
       case "cat2":
         dataComponent = <Contributions />;
         break;
-      case "cat3":
-        dataComponent = <Web />;
-        break;
       default:
-        dataComponent = <Other />;
+        dataComponent = <Web />;
         break;
     }
     return dataComponent;

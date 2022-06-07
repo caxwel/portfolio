@@ -26,7 +26,7 @@ export default function About() {
             </div>
             <div className="center">
               <span>
-                Hello! I’m a software engineer and artist based in Tokyo, living
+                Hello! I’m a software engineer and artist newly based in DC, just having come home from living
                 in my fourth country and most likely drawing in my fiftieth
                 sketchbook.
               </span>

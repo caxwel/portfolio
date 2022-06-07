@@ -35,6 +35,7 @@ const contactEmail = nodemailer.createTransport({
   auth: {
     type: "OAuth2",
     user: process.env.EMAIL,
+    pass: process.env.WORD,
     clientId: process.env.ID,
     clientSecret: process.env.SECRET,
     refreshToken: process.env.REFRESH,
